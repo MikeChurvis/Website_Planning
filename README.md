@@ -33,3 +33,7 @@ Multiple repos, one orchestrator. Repos:
 Updates to main branch of a child repo should trigger a build action in its Parent. Let's say, for example, that Frontend depends on ContactFormWidget. Changing ContactFormWidget's main branch should trigger Frontend to be rebuilt and redeployed.
 
 Transfer domains from GoDaddy to Route 53.
+
+## The Way Forward
+
+Why start complicated? Start with everything in one repo, then split off bits as necessary.
