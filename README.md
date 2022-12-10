@@ -1,0 +1,22 @@
+# Website Planning
+
+A lot of this will be Stream of Consciousness (SOC). I will distill these into system specs later.
+
+Frontend. One frontend? A main frontend plus others?
+
+Main one will be Nuxt. SSG is mature now, so there's no reason not to. Astro's great, but I'm using Vue exclusively at the moment; my metaframework should reflect that.
+
+## Infrastructure
+
+This will be IaC. Learn Terraform. Kubernetes? Likely not; overkill. Terraform yes.
+
+AWS. Put that certification to work. Secrets Manager, SDK, EC2, SQS, the works. Maybe SES too; run a Budget once the sys spec is crystallized.
+
+Multiple repos, one orchestrator. Repos:
+- Website_Frontend
+- Website_Deployment
+- Website_ContactForm
+
+Updates to main branch of a child repo should trigger a build action in Deployment.
+
+Transfer domains from GoDaddy to Route 53.
